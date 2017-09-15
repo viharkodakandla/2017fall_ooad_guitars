@@ -1,9 +1,23 @@
+/**
+ * This class describes Guitar
+ * @author divya
+ *
+ */
 public class Guitar {
 
   private String serialNumber, builder, model, type, backWood, topWood;
   private double price;
-
-  public Guitar(String serialNumber, double price,
+ /**
+  * 
+  * @param serialNumber
+  * @param price
+  * @param builder
+  * @param model
+  * @param type
+  * @param backWood
+  * @param topWood
+  */
+ public Guitar(String serialNumber, double price,
                 String builder, String model, String type,
                 String backWood, String topWood) {
     this.serialNumber = serialNumber;
@@ -15,28 +29,66 @@ public class Guitar {
     this.topWood = topWood;
   }
 
-  public String getSerialNumber() {
+/**
+ * 
+ * @return serialNumber
+ */
+ public String getSerialNumber() {
     return serialNumber;
   }
 
+ 
+ /**
+  * 
+  * @return price
+  */
   public double getPrice() {
     return price;
   }
+  
+  /**
+   * 
+   * @param newPrice
+   */
   public void setPrice(float newPrice) {
     this.price = newPrice;
   }
+  /**
+   * 
+   * @return builder
+   */
   public String getBuilder() {
     return builder;
   }
+  
+  /**
+   * 
+   * @return model
+   */
   public String getModel() {
     return model;
   }
+  
+  /**
+   * 
+   * @return type
+   */
   public String getType() {
     return type;
   }
+  
+  /**
+   * 
+   * @return backwood
+   */
   public String getBackWood() {
     return backWood;
   }
+  
+  /**
+   * 
+   * @return topWood
+   */
   public String getTopWood() {
     return topWood;
   }
