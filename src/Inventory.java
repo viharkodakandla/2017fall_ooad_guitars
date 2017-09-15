@@ -1,12 +1,18 @@
+/**
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1
+ * Student: divya
+ */
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 /**
  * This class to add, search and retrieve the guitars from Inventory
+ * 
  * @author divya
  * @since  09/11/2017
- *  
- *
  */
 public class Inventory {
   private List<Guitar> guitars;
@@ -16,7 +22,10 @@ public class Inventory {
   }
   
   /**
-   * Provide serialNumber,price,builder,model,type,backWood and topWood to add a guitar
+   * Adds a new guitar by providing
+   * serialNumber,price,builder,model,type,backWood and topWood
+   * (Always good to start with an action in method documentation)
+   * 
    * @param serialNumber
    * @param price
    * @param builder
@@ -34,7 +43,8 @@ public class Inventory {
   }
   
   /**
-   * Provide serialNumber to retrieve the guitar
+   * Retrieves guitar given a serialNumber
+   * 
    * @param serialNumber
    * @return Guitar or null
    */
@@ -50,12 +60,13 @@ public class Inventory {
   
   /**
    * Search by Guitar using Guitar object with parameter(builder,model,type,backWood and topWood) 
+   * 
    * @param searchGuitar
    * @return Guitar or null
    */
   public Guitar search(Guitar searchGuitar) {
     for (Iterator<Guitar> i = guitars.iterator(); i.hasNext(); ) {
-      Guitar guitar = (Guitar)i.next();
+      Guitar guitar = i.next();
       // Ignore serial number since that's unique
       // Ignore price since that's unique
       String builder = searchGuitar.getBuilder();

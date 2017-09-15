@@ -1,7 +1,13 @@
 /**
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1
+ * Student: divya
+ */
+
+/**
  * This class used to test Guitar and Inventory
  * @author divya
- *
  */
 
 public class FindGuitarTester {
