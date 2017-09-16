@@ -1,4 +1,11 @@
 /**
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1
+ * Student: divya
+ */
+
+/**
  * This class describes Guitar
  * @author divya
  *
@@ -8,6 +15,7 @@ public class Guitar {
   private String serialNumber, builder, model, type, backWood, topWood;
   private double price;
  /**
+  * Creates new Guitar
   * 
   * @param serialNumber
   * @param price
