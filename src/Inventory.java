@@ -1,34 +1,41 @@
 /**
- * Inventory.java
- * 09/10/17
+ * Class: Object Oriented Analysis and Design 
+ * Professor: Orlando Montalvo
+ * Assignment 1   
+ * Student: vihar Kodakandla 
+ * ID: @01392814
  */
 package test;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-
 /**
- * Class: Object Oriented Analysis and Design Assignment 1 Student: vihar
- * Kodakandla ID: @01392814
+ * 
+ * Inventory class implements properties such as add, get and search function of Guitar.
+ *
  */
+
 
 public class Inventory {
 	private List<Guitar> guitars;
-
+/**
+ * constructor - creates new guitar inventory
+ */
 	public Inventory() {
 		guitars = new LinkedList<Guitar>();
 	}
 
 	/**
+	 * Adds a new guitar to the inventory
 	 * 
-	 * @param serialNumber
-	 * @param price
-	 * @param builder
-	 * @param model
-	 * @param type
-	 * @param backWood
-	 * @param topWood
+	 * @param serialNumber Guitar Serial number
+	 * @param price Guitar price 
+	 * @param builder Guitar builder
+	 * @param model Guitar model
+	 * @param type Guitar type
+	 * @param backWood Guitar backwood
+	 * @param topWood Guitar topwood
 	 */
 	public void addGuitar(String serialNumber, double price, String builder, String model, String type, String backWood,
 			String topWood) {
@@ -38,7 +45,7 @@ public class Inventory {
 
 	/**
 	 * 
-	 * @param serialNumber
+	 * @return serialNumber Guitar serial number
 	 * @return guitar object
 	 */
 	public Guitar getGuitar(String serialNumber) {
@@ -54,8 +61,8 @@ public class Inventory {
 
 	/**
 	 * 
-	 * @param searchGuitar
-	 * @return guitar object
+	 * @param searchGuitar Guitar object
+	 * @return guitar object or null
 	 */
 	public Guitar search(Guitar searchGuitar) {
 

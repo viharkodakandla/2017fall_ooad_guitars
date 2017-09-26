@@ -1,9 +1,16 @@
-
+/**
+ * Class: Object Oriented Analysis and Design 
+ * Professor: Orlando Montalvo
+ * Assignment 1   
+ * Student: vihar Kodakandla 
+ * ID: @01392814
+ */
 package test;
 
 /**
- * Class: Object Oriented Analysis and Design Assignment 1 Student: vihar
- * Kodakandla ID: @01392814
+ * 
+ * Prints the lists of guitars with the user's specifications i.e; price, model, style
+ *
  */
 public class FindGuitarTester {
 	/**
@@ -40,7 +47,7 @@ public class FindGuitarTester {
 
 	/**
 	 * 
-	 * @param inventory
+	 * @param inventory Guitar inventory
 	 * 
 	 */
 	private static void initializeInventory(Inventory inventory) {
