@@ -6,36 +6,36 @@
  * ID: @01392814
  */
 package test;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+
 /**
  * 
- * Inventory class implements properties such as add, get and search function of Guitar.
+ * Inventory class implements the function such as add, get and search function of Guitar class .
  *
  */
 
-
 public class Inventory {
 	private List<Guitar> guitars;
-/**
- * constructor - creates new guitar inventory
- */
+
+	/**
+	 * constructor - creates new guitar inventory
+	 */
 	public Inventory() {
 		guitars = new LinkedList<Guitar>();
 	}
 
 	/**
-	 * Adds a new guitar to the inventory
+	 * Adds a new guitar to the guitars list with the following arguments
 	 * 
-	 * @param serialNumber Guitar Serial number
-	 * @param price Guitar price 
-	 * @param builder Guitar builder
-	 * @param model Guitar model
-	 * @param type Guitar type
-	 * @param backWood Guitar backwood
-	 * @param topWood Guitar topwood
+	 * @param serialNumber -  Guitar Serial number
+	 * @param price -  Guitar price     
+	 * @param builder -  Guitar builder
+	 * @param model - Guitar model
+	 * @param type - Guitar type        
+	 * @param backWood - Guitar backwood    
+	 * @param topWood - Guitar topwood      
 	 */
 	public void addGuitar(String serialNumber, double price, String builder, String model, String type, String backWood,
 			String topWood) {
@@ -44,7 +44,7 @@ public class Inventory {
 	}
 
 	/**
-	 * 
+	 * Gets the guitar with the provided serialnumber
 	 * @return serialNumber Guitar serial number
 	 * @return guitar object
 	 */
@@ -60,8 +60,9 @@ public class Inventory {
 	}
 
 	/**
-	 * 
-	 * @param searchGuitar Guitar object
+	 *  Searches the guitar with provided searchGuitar
+	 *  
+	 * @param searchGuitar Guitar object        
 	 * @return guitar object or null
 	 */
 	public Guitar search(Guitar searchGuitar) {

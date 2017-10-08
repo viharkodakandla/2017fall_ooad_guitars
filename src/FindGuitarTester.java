@@ -5,18 +5,17 @@
  * Student: vihar Kodakandla 
  * ID: @01392814
  */
-package test;
 
 /**
- * 
  * Prints the lists of guitars with the user's specifications i.e; price, model, style
- *
  */
+
 public class FindGuitarTester {
+
 	/**
-	 * 
-	 * @param args Unused
+	 * Main function of the program create inventory and displays the output for whatErinLikes
 	 */
+
 	public static void main(String[] args) {
 		// Set up Rick's guitar inventory
 		Inventory inventory = new Inventory();
@@ -26,28 +25,21 @@ public class FindGuitarTester {
 		Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", "electric", "Alder", "Alder");
 		Guitar guitar = inventory.search(whatErinLikes);
 
-		/**
-		 * This is the if clause: The statements prints when guitar is not null
-		 * 
-		 * 
-		 */
-
 		if (guitar != null) {
 			System.out.println("Erin, you might like this " + guitar.getBuilder() + " " + guitar.getModel() + " "
 					+ guitar.getType() + " guitar:\n   " + guitar.getBackWood() + " back and sides,\n   "
 					+ guitar.getTopWood() + " top.\nYou can have it for only $" + guitar.getPrice() + "!");
 		}
-		/**
-		 * This statement prints when guitar has null value.
-		 */
+
 		else {
 			System.out.println("Sorry, Erin, we have nothing for you.");
 		}
 	}
 
 	/**
-	 * 
-	 * @param inventory Guitar inventory
+	 * initializeInventory method adds guitars to the inventory
+	 * @param inventory
+	 *            Guitar inventory
 	 * 
 	 */
 	private static void initializeInventory(Inventory inventory) {

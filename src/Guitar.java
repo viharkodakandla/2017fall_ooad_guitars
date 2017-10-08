@@ -5,11 +5,9 @@
  * Student: vihar Kodakandla 
  * ID: @01392814
  */
-package test;
+
 /**
- * 
- * Contains all characteristics of guitar.
- *
+ * Contains the properties and functions of guitar.
  */
 
 public class Guitar {
@@ -18,7 +16,7 @@ public class Guitar {
 	private double price;
 
 	/**
-	 * 
+	 * Constructor with the following arguments
 	 * @param serialNumber Guitar Serial number
 	 * @param price Guitar price
 	 * @param builder Guitar builder
